@@ -8,7 +8,6 @@ while True:
     except:
         continue
 
-
 # Print the piramids
 for i in range(n):
 
