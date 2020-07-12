@@ -14,4 +14,4 @@ This is the code I wrote during Harvard´s CS50 MOOC course (https://cs50.harvar
 
 Academic Honesty: https://docs.cs50.net/2016/fall/syllabus/cs50.html#academic-honesty
 
-![Final Certificate](finalCertificate.png)
+![Final Certificate](/final certificate.png)
