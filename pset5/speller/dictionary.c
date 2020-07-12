@@ -67,7 +67,9 @@ unsigned int hash(const char *word)
     int c;
 
     while ((c = *word++))
-        hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
+    {
+        hash = ((hash << 5) + hash) + c;  /* hash * 33 + c */
+    }
 
     return hash % N;
 }
@@ -75,7 +77,7 @@ unsigned int hash(const char *word)
 // Loads dictionary into memory, returning true if successful else false
 bool load(const char *dictionary)
 {
-     // Try to open the file
+    // Try to open the file
     FILE *dict = fopen(dictionary, "r");
     if (dict == NULL)
     {
@@ -151,12 +153,12 @@ bool unload(void)
             continue;
         }
         node *tmp = cursor;
-        while(true)
+        while (true)
         {
             if (cursor->next != NULL)
             {
                 cursor = cursor->next;
-                free (tmp);
+                free(tmp);
                 tmp = cursor;
             }
             else
